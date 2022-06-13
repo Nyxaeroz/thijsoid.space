@@ -152,22 +152,41 @@ nav img:hover {
   text-decoration: none;
 }
 
-.nav-links ul li::after {
+#menu-about::after {
   content: '';
   width: 0%;
   height: 2px;
-  /* background: #88aab3; */
-  background: #e6ca5c;
+  background: #6a5c9d;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+#menu-projects::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #397cbe;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+#menu-blog::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f49cae;
   display: block;
   margin: auto;
   transition: 0.5s;
 }
 
-#menu-about::after {
-  background: #6a5c9d;
+#menu-about:hover::after {
+  width: 100%
 }
-
-.nav-links ul li:hover::after {
+#menu-projects:hover::after {
+  width: 100%
+}
+#menu-blog:hover::after {
   width: 100%
 }
 

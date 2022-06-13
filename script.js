@@ -1,3 +1,4 @@
+// Make the sun's face point in the user's mouse direction
 document.addEventListener("mousemove", move_face);
 
 var height = document.body.clientHeight;
@@ -15,6 +16,9 @@ function move_face(e){
   });
 }
 
+
+// Change certain images on hover
+// This requires the image have a 'data-hover' field
 var hoverables = ['.sun', '.pink-planet', '.moon', '.sattelite'];
 
 hoverables.forEach(function (item, index) {
@@ -25,3 +29,22 @@ hoverables.forEach(function (item, index) {
   img.onmouseover = () => { img.src = hover; }
   img.onmouseout = () => { img.src = start; } //to revert back to start
 });
+
+
+// Show opo-up is user is using a mobile device
+const deviceType = () => {
+  const agent = navigator.userAgent;
+  if ( /(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(agent) ) {
+      return 'tablet';
+  }
+  else if ( /Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(agent) ) {
+      return 'mobile';
+  }
+  return 'desktop';
+};
+
+if ( deviceType != 'desktop' ) {
+  popup = document.querySelector('#popup');
+  popup.style.display = 'block';
+}
+

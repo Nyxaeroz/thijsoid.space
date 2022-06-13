@@ -23,6 +23,22 @@ img {
   -ms-user-select: none;
 }
 
+#popup {
+  background: red;
+  opacity: 0.5;
+  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+  height: 80%;
+  margin-top: 10%;
+  text-align: center;
+  padding-top: 45%;
+  display: none;
+}
+@media only screen and (max-device-width:480px) {
+  div#popup { display: block; }
+}
+
 /*
 
     IMAGE SPACING

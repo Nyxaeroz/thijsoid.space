@@ -43,7 +43,7 @@ const deviceType = () => {
   return 'desktop';
 };
 
-if ( deviceType != 'desktop' ) {
+if ( deviceType() != 'desktop' ) {
   popup = document.querySelector('#popup');
   popup.style.display = 'block';
 }

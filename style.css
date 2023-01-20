@@ -256,6 +256,31 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   width: 100%
 }
 
+
+/*
+
+  WEBCOMIC
+
+*/
+#chapter-header {
+  width: 100%;
+  text-align: center;  
+  color: #f5feff;
+  
+}
+
+.comic-page {
+  width: 50%;
+  height: auto;
+  margin-top: 0%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 0%;
+  padding: 0%;
+  display: block;
+}
+
+
 /*
 
     ANIMATIONS

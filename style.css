@@ -14,7 +14,7 @@ body {
 
 img {
   width: 100%;
-  
+  position: absolute;
   user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
@@ -23,6 +23,11 @@ img {
   -ms-user-select: none;
 }
 
+/* 
+
+  POP-UP FOR ERROR MESSAGE
+
+*/
 #popup {
   background: red;
   opacity: 0.5;
@@ -47,10 +52,13 @@ img {
 .image-spacer {
   z-index: -1;
   width: 100%;
-  position: absolute;
-  top: 0;
+  position: relative;
+  bottom: 0;
   left: 0;
   margin: 0;
+}
+@media only screen and (max-device-width:700px) {
+  .image-spacer { position: fixed; }
 }
 .earth {
   position: relative;

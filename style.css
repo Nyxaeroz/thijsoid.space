@@ -52,13 +52,15 @@ img {
 .image-spacer {
   z-index: -1;
   width: 100%;
-  position: relative;
-  bottom: 0;
+  position: absolute;
   left: 0;
   margin: 0;
 }
 @media only screen and (max-device-width:700px) {
-  .image-spacer { position: fixed; }
+  .image-spacer { position: fixed; bottom: 0;}
+}
+@media min-device-width:700px {
+  .image-spacer { top: 0; }
 }
 .earth {
   position: relative;
@@ -277,8 +279,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   left: 0;
   margin: 0;
 }
-.project-spaces img {
-  width: 100%;
+.project-spacer img {
+  width: 80%;
   user-drag: none;
   -webkit-user-drag: none;
   user-select: none;

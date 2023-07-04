@@ -154,8 +154,6 @@ nav {
   position: fixed;
   width: 100%;
   height: 5%;
-  /* border: 2px solid magenta; */
-  padding: 10px;
 }
 
 /* LOGO */
@@ -345,6 +343,60 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+  }
+}
+
+/*
+
+  PROJECT TEMPLATE
+
+*/
+.primary-project-img-wrapper {
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.primary-project-img-wrapper img {
+  width: 100%;
+}
+
+.project-text {
+  float: left;
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+}
+
+.project-text img {
+  width: 30%;
+  margin: 1%;
+}
+
+@media screen and (max-width: 550px) {
+  .primary-project-img-wrapper {
+    width: 100%;
+    
+  }
+  .primary-project-img-wrapper img {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .project-text {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .project-text img {
+    width: 0;
+    margin: 0;
   }
 }
 

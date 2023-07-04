@@ -7,11 +7,9 @@ var width = document.body.clientWidth
 function move_face(e){
   document.querySelectorAll(".follow").forEach(function(move){
     mx = e.clientX - (width / 2);
-    my = e.clientY - (height / 4);
-
-
-    var x = mx / 15;
-    var y = my / 7;
+    my = deviceType() == 'desktop' ? e.clientY - (height / 4) : e.clientY - (3 * height / 4);
+    var x = deviceType() == 'desktop' ? mx / 15 : mx / 10;
+    var y = deviceType() == 'desktop' ? my / 7  : my / 20;
     move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
   });
 }

@@ -163,6 +163,13 @@ nav img {
   padding: 10px;
 }
 
+@media screen and (max-width:370px) {
+  nav img {
+    height: 80%;
+    padding-top: 20px;
+  }
+}
+
 nav img {
   transition: 0.5s;
 }
@@ -354,12 +361,13 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 .primary-project-img-wrapper {
   float: left;
   width: 30%;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .primary-project-img-wrapper img {
-  width: 100%;
+  width: 90%; 
+  margin-left: 5%;
+  margin-right: 5%;
+
 }
 
 .project-text {

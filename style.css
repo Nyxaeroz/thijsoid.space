@@ -288,6 +288,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   margin: 0;
   padding-top: 50px;
 }
+.project-spacer a {
+  color: #f5feff;
+}
 .project-spacer img {
   width: 80%;
   user-drag: none;

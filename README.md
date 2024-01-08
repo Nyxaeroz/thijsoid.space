@@ -1,2 +1,2 @@
 # thijsoid.space
-My personal website!
+My personal website! Find it here: https://nyxaeroz.github.io/thijsoid.space/
